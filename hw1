@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-//使用chatgpt協助製作
 
 double* createMatrix(int rows, int cols) {
     return (double*)malloc(rows * cols * sizeof(double));
