@@ -29,7 +29,7 @@ void* withdraw(void* arg) {
 
 int main() {
     pthread_t threads[NUM_THREADS];
-    pthread_mutex_init(&mutex, NULL);
+    pthread_mutex_init(&mutex, NULL); 
 
     for (int i = 0; i < NUM_THREADS / 2; i++) {
         pthread_create(&threads[i], NULL, deposit, NULL);
